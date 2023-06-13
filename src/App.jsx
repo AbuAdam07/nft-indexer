@@ -20,7 +20,7 @@ function App() {
 
   async function getNFTsForOwner() {
     const config = {
-      apiKey: '<-- COPY-PASTE YOUR ALCHEMY API KEY HERE -->',
+      apiKey: '<Bl5ZIuZKoPyHqX2yLo5IJ5lg_3TB0nar>',
       network: Network.ETH_MAINNET,
     };
 
@@ -42,7 +42,11 @@ function App() {
     setHasQueried(true);
   }
   return (
-    <Box w="100vw">
+    <Box w="100vw"
+    h = "1000px"
+      color="black"
+      bg="yellow"
+       >
       <Center>
         <Flex
           alignItems={'center'}
@@ -52,7 +56,8 @@ function App() {
           <Heading mb={0} fontSize={36}>
             NFT Indexer 🖼
           </Heading>
-          <Text>
+          <Text
+          fontsize="2em">
             Plug in an address and this website will return all of its NFTs!
           </Text>
         </Flex>
